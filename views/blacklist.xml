@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem name="Purchases"
+         id="purchase.menu_purchase_root"
+         groups="purchase.group_purchase_manager,purchase.group_purchase_user"
+         web_icon="purchase,static/description/icon.png"
+         sequence="25"/>
+
+    <record model="ir.actions.act_window" id="black_list_action">
+        <field name="name">Blacklist</field>
+        <field name="res_model">res.partner</field>
+        <field name="domain">[("blacklist", "=", True)]</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Blacklist menu -->
+    <menuitem id="menu_black_list" name="Blacklist"
+        parent="purchase.menu_purchase_root" action="black_list_action"
+        sequence="2"/>
+</odoo>

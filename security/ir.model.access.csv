@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_notify_blacklist_notify_blacklist,notify_blacklist.notify_blacklist,model_notify_blacklist_notify_blacklist,,1,0,0,0

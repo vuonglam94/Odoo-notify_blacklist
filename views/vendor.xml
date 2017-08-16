@@ -1,0 +1,17 @@
+<odoo>
+    <!--Add blacklist field to partner form view-->
+    <record model="ir.ui.view" id="partner_vendor_form_view">
+        <field name="name">partner.vendor</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Add Blacklist">
+                    <group>
+                        <field name="blacklist"/>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>
